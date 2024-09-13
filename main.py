@@ -13,7 +13,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 
 DATASET = "dataset.csv"
-PATH = "D:/code/face-recognition/img"
+PATH = "C:\\Users\\gabri\\OneDrive\\Documentos\\UFSCar\\PDI\\Reconhecimento\\eface-recognition\\img"
 
 face_cascade = cv2.CascadeClassifier("lbpcascade_frontalface.xml")
 
@@ -34,8 +34,7 @@ NAMES = [
     "Diego Moraes Batista",
     "Rodrigo Nascimento Cunha",
     "Daniel Alves Teixeira",
-    "André Cardoso Ramos",
-]
+    "André Cardoso Ramos"]
 
 def resize_image(image, size=(128, 128)):
     return cv2.resize(image, size)
